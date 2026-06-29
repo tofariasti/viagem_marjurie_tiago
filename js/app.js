@@ -738,7 +738,12 @@ function openModal(destId) {
     </div>
   `).join('');
 
-  const transportHtml = `
+  const tableWrap = (html) => `
+    <p class="table-scroll-hint">Deslize a tabela para ver todos os dados →</p>
+    <div class="table-scroll">${html}</div>
+  `;
+
+  const transportHtml = tableWrap(`
     <table class="data-table">
       <thead><tr><th>Modalidade</th><th>Tempo</th><th>Custo (casal)</th><th>Obs.</th></tr></thead>
       <tbody>
@@ -747,18 +752,18 @@ function openModal(destId) {
         <tr><td>✈️ Avião</td><td>${dest.transport.plane.time}</td><td>${formatMoney(dest.transport.plane.total)}</td><td>${dest.transport.plane.note || ''}</td></tr>
       </tbody>
     </table>
-  `;
+  `);
 
-  const hotelsHtml = `
+  const hotelsHtml = tableWrap(`
     <table class="data-table">
       <thead><tr><th>Hotel/Pousada</th><th>Diária</th><th>Wi-Fi</th><th>Nota</th></tr></thead>
       <tbody>
         ${dest.hotels.map(h => `<tr><td>${h.name}</td><td>${formatMoney(h.price)}/noite</td><td>${h.wifi ? '✓' : '—'}</td><td>${h.note}</td></tr>`).join('')}
       </tbody>
     </table>
-  `;
+  `);
 
-  const costsHtml = `
+  const costsHtml = tableWrap(`
     <table class="data-table">
       <thead><tr><th>Cenário</th><th>Transporte</th><th>Hospedagem</th><th>Alimentação</th><th>Passeios</th><th>Total</th></tr></thead>
       <tbody>
@@ -770,7 +775,7 @@ function openModal(destId) {
         }).join('')}
       </tbody>
     </table>
-  `;
+  `);
 
   const ytLinks = (dest.references.youtube || []).map(y =>
     typeof y === 'string'
@@ -858,16 +863,21 @@ function renderCompare() {
 
   els.comparePanel.classList.remove('hidden');
   els.compareTable.innerHTML = `
-    <thead><tr><th>Critério</th><th>${a.name}</th><th>${b.name}</th></tr></thead>
-    <tbody>
-      ${rows.map(([label, va, vb, better]) => `
-        <tr>
-          <td>${label}</td>
-          <td class="${better === 'a' ? 'better' : ''}">${va}</td>
-          <td class="${better === 'b' ? 'better' : ''}">${vb}</td>
-        </tr>
-      `).join('')}
-    </tbody>
+    <p class="table-scroll-hint">Deslize a tabela para comparar →</p>
+    <div class="table-scroll">
+      <table class="compare-table">
+        <thead><tr><th>Critério</th><th>${a.name}</th><th>${b.name}</th></tr></thead>
+        <tbody>
+          ${rows.map(([label, va, vb, better]) => `
+            <tr>
+              <td>${label}</td>
+              <td class="${better === 'a' ? 'better' : ''}">${va}</td>
+              <td class="${better === 'b' ? 'better' : ''}">${vb}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </div>
   `;
 }
 
