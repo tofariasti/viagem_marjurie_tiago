@@ -1,0 +1,36 @@
+:root {
+  --color-night: #1a2332;
+  --color-night-soft: #243044;
+  --color-cream: #f8f4ef;
+  --color-cream-dark: #ebe4d9;
+  --color-wine: #7c3d4a;
+  --color-wine-light: #9e5565;
+  --color-pine: #2d5a4a;
+  --color-pine-light: #3d7a64;
+  --color-gold: #c4a35a;
+  --color-text: #2c2c2c;
+  --color-text-muted: #5a5a5a;
+  --color-white: #ffffff;
+  --color-success: #2d6a4f;
+  --color-warning: #b8860b;
+  --color-danger: #a63d40;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Source Sans 3', system-ui, sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 2px 8px rgba(26, 35, 50, 0.08);
+  --shadow-md: 0 8px 24px rgba(26, 35, 50, 0.12);
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  --max-width: 1200px;
+  --header-height: 72px;
+}

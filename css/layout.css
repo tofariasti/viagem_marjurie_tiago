@@ -1,0 +1,132 @@
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text);
+  background: var(--color-cream);
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-height);
+  background: rgba(26, 35, 50, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-cream);
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.nav-links a {
+  color: rgba(248, 244, 239, 0.85);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--color-gold);
+}
+
+.hero {
+  background: linear-gradient(160deg, var(--color-night) 0%, var(--color-night-soft) 50%, var(--color-pine) 100%);
+  color: var(--color-cream);
+  padding: var(--space-xl) 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto var(--space-md);
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.hero-badge {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+}
+
+section {
+  padding: var(--space-xl) 0;
+}
+
+section:nth-child(even) {
+  background: var(--color-white);
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  color: var(--color-night);
+  margin-bottom: var(--space-xs);
+}
+
+.section-desc {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+  max-width: 700px;
+}
+
+.site-footer {
+  background: var(--color-night);
+  color: rgba(248, 244, 239, 0.7);
+  padding: var(--space-lg) 0;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.site-footer p + p {
+  margin-top: var(--space-xs);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    padding: var(--space-lg) 0;
+  }
+}
