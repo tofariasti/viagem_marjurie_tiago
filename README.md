@@ -29,11 +29,9 @@ Acesse: http://localhost:8080
 
 O site está disponível em: [https://tofariasti.github.io/viagem_marjurie_tiago/](https://tofariasti.github.io/viagem_marjurie_tiago/)
 
-Deploy automático via GitHub Actions (`.github/workflows/pages.yml`). Para ativar:
+Deploy automático via GitHub Actions (`.github/workflows/pages.yml`) a cada push na branch `master`.
 
-1. No repositório, vá em **Settings → Pages**
-2. Em **Source**, selecione **GitHub Actions**
-3. A cada push na branch `master`, o site é atualizado
+> **Nota:** no plano gratuito do GitHub, Pages só funciona em repositórios **públicos**. Os primeiros deploys podem falhar até Pages ser habilitado em **Settings → Pages → Source: GitHub Actions**.
 
 ### Via GitHub Actions (opcional)
 
