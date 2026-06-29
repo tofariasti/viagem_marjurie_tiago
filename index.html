@@ -7,7 +7,7 @@
   <title>Viagem Tiago & Marjurie — Jul/Ago 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -28,13 +28,15 @@
 
   <section class="hero">
     <div class="container">
-      <h1>Nossa viagem de inverno</h1>
-      <p class="hero-subtitle">10 destinos analisados para casal workation saindo de Porto Alegre — romântico, indoor-friendly e dentro do orçamento.</p>
+      <span class="hero-eyebrow">Porto Alegre · Jul/Ago 2026</span>
+      <h1>Nossa viagem de <em>inverno</em></h1>
+      <div class="hero-divider" aria-hidden="true"></div>
+      <p class="hero-subtitle">10 destinos analisados para casal workation — romântico, indoor-friendly e dentro do orçamento de R$ 6 mil.</p>
       <div class="hero-meta">
-        <span class="hero-badge">26 jul – 2 ago 2026</span>
-        <span class="hero-badge">Orçamento: R$ 6.000 (casal)</span>
+        <span class="hero-badge"><strong>26 jul – 2 ago</strong> 2026</span>
+        <span class="hero-badge">Orçamento <strong>R$ 6.000</strong></span>
         <span class="hero-badge">7 noites · 8 dias</span>
-        <span class="hero-badge">Home office + passeios à noite</span>
+        <span class="hero-badge">Workation + passeios à noite</span>
       </div>
     </div>
   </section>
@@ -52,16 +54,22 @@
 
   <section id="top3">
     <div class="container">
-      <h2 class="section-title">Top 3 para vocês</h2>
-      <p class="section-desc">Combinação de romantismo, compatibilidade com asma, viabilidade de trabalho remoto e custo dentro de R$ 6 mil.</p>
+      <div class="section-header">
+        <span class="section-label">Recomendação</span>
+        <h2 class="section-title">Top 3 para vocês</h2>
+        <p class="section-desc">Combinação de romantismo, compatibilidade com asma, viabilidade de trabalho remoto e custo dentro de R$ 6 mil.</p>
+      </div>
       <div id="top3-grid" class="top3-grid"></div>
     </div>
   </section>
 
   <section id="destinos">
     <div class="container">
-      <h2 class="section-title">10 destinos brasileiros</h2>
-      <p class="section-desc">Excluídos RS, SC e RJ. Filtre por orçamento, transporte e perfil. Clique em "Roteiro" para ver programação dia a dia.</p>
+      <div class="section-header">
+        <span class="section-label">Explorar</span>
+        <h2 class="section-title">10 destinos brasileiros</h2>
+        <p class="section-desc">Excluídos RS, SC e RJ. Filtre por orçamento, transporte e perfil. Clique em "Roteiro" para ver programação dia a dia.</p>
+      </div>
 
       <div id="favorites-bar" class="favorites-bar"></div>
 
@@ -104,8 +112,11 @@
 
   <section id="comparador">
     <div class="container">
-      <h2 class="section-title">Comparador</h2>
-      <p class="section-desc">Selecione "Comparar" em dois destinos acima para ver lado a lado.</p>
+      <div class="section-header">
+        <span class="section-label">Análise</span>
+        <h2 class="section-title">Comparador</h2>
+        <p class="section-desc">Selecione "Comparar" em dois destinos acima para ver lado a lado.</p>
+      </div>
       <div id="compare-panel" class="compare-panel hidden">
         <div id="compare-table"></div>
       </div>
@@ -114,38 +125,44 @@
 
   <section id="internacional">
     <div class="container">
-      <h2 class="section-title">Comparativo internacional (informativo)</h2>
-      <p class="section-desc">Punta del Este e Bariloche para referência futura — requerem passaporte e ultrapassam o orçamento atual.</p>
+      <div class="section-header">
+        <span class="section-label">Referência</span>
+        <h2 class="section-title">Comparativo internacional</h2>
+        <p class="section-desc">Punta del Este e Bariloche para referência futura — requerem passaporte e ultrapassam o orçamento atual.</p>
+      </div>
       <div id="intl-grid" class="intl-grid"></div>
     </div>
   </section>
 
   <section id="workation">
     <div class="container">
-      <h2 class="section-title">Modelo workation</h2>
-      <p class="section-desc">Roteiros otimizados para Tiago trabalhar durante o dia e o casal passear no turno inverso.</p>
-      <div class="filters-panel" style="background:var(--color-cream)">
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem">
-          <div>
-            <strong>Segunda a sexta</strong>
-            <ul style="margin-top:0.5rem;font-size:0.9rem;color:var(--color-text-muted)">
+      <div class="section-header">
+        <span class="section-label">Rotina</span>
+        <h2 class="section-title">Modelo workation</h2>
+        <p class="section-desc">Roteiros otimizados para Tiago trabalhar durante o dia e o casal passear no turno inverso.</p>
+      </div>
+      <div class="workation-panel">
+        <div class="workation-grid">
+          <div class="workation-block">
+            <h3>Segunda a sexta</h3>
+            <ul>
               <li>08h–12h — Trabalho (Wi-Fi no hotel)</li>
               <li>12h–13h30 — Almoço</li>
               <li>13h30–18h — Trabalho</li>
               <li>18h–22h — Passeio + jantar romântico</li>
             </ul>
           </div>
-          <div>
-            <strong>Sábado e domingo</strong>
-            <ul style="margin-top:0.5rem;font-size:0.9rem;color:var(--color-text-muted)">
+          <div class="workation-block">
+            <h3>Sábado e domingo</h3>
+            <ul>
               <li>Manhã — Passeio principal ou trabalho reduzido</li>
               <li>Tarde/noite — Experiências do casal</li>
               <li>Dom 2/ago — Check-out e retorno a POA</li>
             </ul>
           </div>
-          <div>
-            <strong>Requisitos do hotel</strong>
-            <ul style="margin-top:0.5rem;font-size:0.9rem;color:var(--color-text-muted)">
+          <div class="workation-block">
+            <h3>Requisitos do hotel</h3>
+            <ul>
               <li>Wi-Fi estável (confirmar Mbps)</li>
               <li>Mesa ou escrivaninha</li>
               <li>Silêncio no horário comercial</li>

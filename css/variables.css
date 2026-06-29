@@ -1,36 +1,59 @@
 :root {
-  --color-night: #1a2332;
-  --color-night-soft: #243044;
-  --color-cream: #f8f4ef;
-  --color-cream-dark: #ebe4d9;
-  --color-wine: #7c3d4a;
-  --color-wine-light: #9e5565;
-  --color-pine: #2d5a4a;
-  --color-pine-light: #3d7a64;
-  --color-gold: #c4a35a;
-  --color-text: #2c2c2c;
-  --color-text-muted: #5a5a5a;
+  /* Paleta inverno romântico */
+  --color-midnight: #0d1117;
+  --color-night: #151c28;
+  --color-night-soft: #1e2a3a;
+  --color-slate: #2a3544;
+
+  --color-ivory: #faf7f2;
+  --color-cream: #f3ede4;
+  --color-cream-dark: #e5dcd0;
+  --color-linen: #fffefb;
+
+  --color-wine: #7a3344;
+  --color-wine-deep: #5c2433;
+  --color-wine-light: #9e4a5c;
+  --color-rose: #c47888;
+
+  --color-champagne: #c9a962;
+  --color-champagne-light: #e0c989;
+  --color-gold: var(--color-champagne);
+
+  --color-pine: #2f4f44;
+  --color-pine-light: #4a7a68;
+  --color-sage: #6b8f7a;
+
+  --color-text: #1a1f26;
+  --color-text-muted: #5c6570;
+  --color-text-soft: #8a939e;
+
   --color-white: #ffffff;
   --color-success: #2d6a4f;
-  --color-warning: #b8860b;
-  --color-danger: #a63d40;
+  --color-warning: #9a7209;
+  --color-danger: #8b2e35;
 
-  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-display: 'Playfair Display', Georgia, serif;
   --font-sans: 'Source Sans 3', system-ui, sans-serif;
 
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 28px;
 
-  --shadow-sm: 0 2px 8px rgba(26, 35, 50, 0.08);
-  --shadow-md: 0 8px 24px rgba(26, 35, 50, 0.12);
+  --shadow-sm: 0 2px 12px rgba(13, 17, 23, 0.06);
+  --shadow-md: 0 12px 40px rgba(13, 17, 23, 0.1);
+  --shadow-lg: 0 20px 60px rgba(13, 17, 23, 0.14);
+  --shadow-glow: 0 4px 24px rgba(122, 51, 68, 0.2);
 
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2.5rem;
-  --space-xl: 4rem;
+  --space-xl: 4.5rem;
 
-  --max-width: 1200px;
-  --header-height: 72px;
+  --max-width: 1140px;
+  --header-height: 76px;
+
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
