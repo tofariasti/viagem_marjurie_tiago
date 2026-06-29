@@ -2,6 +2,8 @@
 
 Painel de planejamento de viagem para o casal Tiago e Marjurie (Porto Alegre/RS), período **26 de julho a 2 de agosto de 2026**.
 
+**Site publicado:** [https://tofariasti.github.io/viagem_marjurie_tiago/](https://tofariasti.github.io/viagem_marjurie_tiago/)
+
 ## O que contém
 
 - **10 destinos brasileiros** analisados (excluindo RS, SC e RJ)
@@ -25,13 +27,13 @@ Acesse: http://localhost:8080
 
 ## Publicar no GitHub Pages
 
-1. Faça push do repositório para o GitHub
-2. No repositório, vá em **Settings → Pages**
-3. Em **Source**, selecione:
-   - Branch: `main` (ou `master`)
-   - Folder: `/ (root)`
-4. Salve — em alguns minutos o site estará em:
-   `https://<seu-usuario>.github.io/viagem_marjurie_tiago/`
+O site está disponível em: [https://tofariasti.github.io/viagem_marjurie_tiago/](https://tofariasti.github.io/viagem_marjurie_tiago/)
+
+Deploy automático via GitHub Actions (`.github/workflows/pages.yml`). Para ativar:
+
+1. No repositório, vá em **Settings → Pages**
+2. Em **Source**, selecione **GitHub Actions**
+3. A cada push na branch `master`, o site é atualizado
 
 ### Via GitHub Actions (opcional)
 
