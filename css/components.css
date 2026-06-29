@@ -102,29 +102,33 @@
 
 /* Alert banner */
 .alert-banner {
-  background: linear-gradient(135deg, #fffbf0 0%, #fff8e8 100%);
-  border: 1px solid rgba(201, 169, 98, 0.35);
-  border-left: 4px solid var(--color-champagne);
+  background: #fff8e0;
+  border: 1.5px solid #d4a82a;
+  border-left: 5px solid #b8860b;
   padding: var(--space-md) var(--space-md) var(--space-md) 1.25rem;
   border-radius: var(--radius-md);
   margin-bottom: var(--space-md);
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 500;
   line-height: 1.6;
-  color: var(--color-text);
+  color: #3d2e08;
 }
 
 .alert-banner strong {
-  color: var(--color-warning);
+  color: #7a5a00;
+  font-weight: 800;
 }
 
 .alert-banner.danger {
-  background: linear-gradient(135deg, #fff5f5 0%, #fdeaea 100%);
-  border-color: rgba(139, 46, 53, 0.25);
-  border-left-color: var(--color-danger);
+  background: #fde8e8;
+  border-color: #c44;
+  border-left-color: #a02030;
+  color: #4a1018;
 }
 
 .alert-banner.danger strong {
-  color: var(--color-danger);
+  color: #8b1a2a;
+  font-weight: 800;
 }
 
 /* Top 3 */
@@ -252,9 +256,10 @@
 }
 
 .dest-summary {
-  font-size: 0.9rem;
+  font-size: 0.92rem;
+  font-weight: 500;
   color: var(--color-text-muted);
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .badges {
