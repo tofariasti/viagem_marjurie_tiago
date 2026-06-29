@@ -108,7 +108,7 @@ const DESTINATIONS = [
     hotels: [
       { name: 'Pousada do Ipê', price: 140, wifi: true, note: 'Boa custo-benefício, Wi-Fi' },
       { name: 'Pousada Montanhas do Sol', price: 195, wifi: true, note: 'Nota 9.2, ambiente romântico' },
-      { name: 'Hotel Real São Lourenço', price: 144, wifi: true, note: 'Centro, prático para workation' }
+      { name: 'Hotel Real São Lourenço', price: 144, wifi: true, note: 'Centro, bom para trabalhar no quarto' }
     ],
     packages: ['Circuito das Águas MG', 'Ingresso Teleférico + Parque das Águas combo'],
     alerts: ['Frio à noite (5–12°C) — levar casaco', 'Umidade moderada — ok para asma com cuidado', 'Alta temporada julho — reservar cedo'],
@@ -537,7 +537,7 @@ const DESTINATIONS = [
       { name: 'Lagoa Quente Hotel', price: 180, wifi: true, note: 'Econômico' }
     ],
     packages: ['Ingresso Hot Park / diária parque', 'Combo Rio Quente'],
-    alerts: ['Viagem de carro muito longa', 'Umidade alta nos parques — asma ok com cuidado', 'Resort pode ser barulhento — escolher hotel workation'],
+    alerts: ['Viagem de carro muito longa', 'Umidade alta nos parques — asma ok com cuidado', 'Resort pode ser barulhento — escolher hotel silencioso para trabalhar'],
     references: {
       official: 'https://www.caldasnovas.go.gov.br/turismo',
       instagram: 'https://www.instagram.com/explore/tags/caldasnovas/',
@@ -650,7 +650,7 @@ function renderCostBars(dest) {
 }
 
 function renderScoreBars(scores) {
-  const labels = { romance: 'Romance', winter: 'Inverno', asthma: 'Asma', workation: 'Workation', budget: 'Orçamento' };
+  const labels = { romance: 'Romance', winter: 'Inverno', asthma: 'Asma', workation: 'Home office', budget: 'Orçamento' };
   return Object.entries(labels).map(([key, label]) => `
     <div class="score-row">
       <span>${label}</span>
@@ -679,7 +679,7 @@ function renderCard(dest) {
       <div class="dest-card-body">
         <p class="dest-summary">${dest.summary}</p>
         <div class="badges">
-          <span class="badge badge-workation">Workation</span>
+          <span class="badge badge-workation">Home office</span>
           <span class="badge badge-indoor">Indoor+</span>
           ${budgetBadge}
           ${dest.topRank ? `<span class="badge badge-top">Top ${dest.topRank}</span>` : ''}
@@ -855,7 +855,7 @@ function renderCompare() {
     ['Custo total (recomendado)', formatMoney(costA.total), formatMoney(costB.total), costA.total < costB.total ? 'a' : 'b'],
     ['Romance', a.scores.romance, b.scores.romance, a.scores.romance > b.scores.romance ? 'a' : 'b'],
     ['Asma-friendly', a.scores.asthma, b.scores.asthma, a.scores.asthma > b.scores.asthma ? 'a' : 'b'],
-    ['Workation', a.scores.workation, b.scores.workation, a.scores.workation > b.scores.workation ? 'a' : 'b'],
+    ['Home office', a.scores.workation, b.scores.workation, a.scores.workation > b.scores.workation ? 'a' : 'b'],
     ['Distância (carro)', `${a.transport.car.distance} km`, `${b.transport.car.distance} km`, a.transport.car.distance < b.transport.car.distance ? 'a' : 'b'],
     ['Transporte recomendado', a.recommendedTransport, b.recommendedTransport, null],
     ['Nota geral', `${a.overallScore}/10`, `${b.overallScore}/10`, a.overallScore > b.overallScore ? 'a' : 'b']

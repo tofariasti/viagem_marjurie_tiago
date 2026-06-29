@@ -8,7 +8,7 @@ Painel de planejamento de viagem para o casal Tiago e Marjurie (Porto Alegre/RS)
 
 - **10 destinos brasileiros** analisados (excluindo RS, SC e RJ)
 - Comparativo **carro (Cobalt 2015) vs ônibus vs avião**
-- Roteiros **workation** dia a dia (trabalho de dia, passeios à noite)
+- Roteiros dia a dia (**trabalho de dia, passeios à noite**)
 - Estimativas de custo em 3 faixas (econômico / equilibrado / confortável)
 - Top 3 recomendados, filtros interativos e comparador lado a lado
 - Seção internacional informativa (Punta del Este e Bariloche — requer passaporte)
