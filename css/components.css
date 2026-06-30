@@ -283,6 +283,16 @@
 .badge-budget-warn { background: rgba(201, 169, 98, 0.15); color: #7a5c10; }
 .badge-budget-over { background: rgba(139, 46, 53, 0.1); color: var(--color-danger); }
 .badge-top { background: linear-gradient(135deg, var(--color-champagne), var(--color-champagne-light)); color: var(--color-night); }
+.badge-intl { background: #dce8f5; color: #1a3a5c; }
+.badge-passport { background: #fde8e8; color: #8b1a2a; }
+
+.dest-card-intl {
+  border-color: rgba(26, 58, 92, 0.25);
+}
+
+.dest-card-intl .dest-card-header {
+  background: linear-gradient(135deg, #1a3a5c 0%, #2a4a6c 100%);
+}
 
 .score-bars {
   display: flex;

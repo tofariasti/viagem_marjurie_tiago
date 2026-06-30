@@ -6,11 +6,29 @@ const INTERNATIONAL = [
     id: 'punta-del-este',
     name: 'Punta del Este',
     country: 'Uruguai',
-    summary: 'Praias sofisticadas, gastronomia e clima mais ameno no inverno. Destino premium da região.',
-    estimatedCost: { min: 8500, max: 14000 },
-    pros: ['Praias e pôr do sol', 'Gastronomia de alto nível', 'Clima mais ameno que serra BR'],
-    cons: ['Requer passaporte válido', 'Câmbio e custos em dólar', 'Muito acima do orçamento de R$ 6 mil'],
-    transport: 'Carro POA → Chuí → Punta (~700 km) ou ônibus internacional',
+    summary: 'Praias sofisticadas, gastronomia e clima mais ameno no inverno. Destino premium da região — em julho está fora da alta temporada.',
+    whyMarjurie: 'Porto da Barra e La Barra ao pôr do sol, restaurantes à beira-mar e clima de balneário europeu. Em julho/agosto é mais tranquilo e romântico, sem multidão de verão.',
+    estimatedCost: { min: 6500, max: 14000 },
+    pros: [
+      'Praias e pôr do sol',
+      'Gastronomia de alto nível',
+      'Jul/ago = baixa temporada (mais barato)',
+      'Carro do RS até o Uruguai é viável',
+      'Sem visto — só passaporte'
+    ],
+    cons: [
+      'Requer passaporte válido',
+      'Custos em dólar uruguaio',
+      'Cenário confortável passa de R$ 6 mil',
+      'Fronteira pode ter fila em feriados'
+    ],
+    transport: 'Carro POA → Santana do Livramento/Chuí → Punta (~850 km, ~12h) · ou ônibus internacional',
+    highlights: [
+      'Porto da Barra e Mansa',
+      'Casapueblo (Punta Ballena) ao entardecer',
+      'La Barra — ponte e restaurantes',
+      'Jantar em Playa Brava'
+    ],
     references: {
       official: 'https://www.turismo.gub.uy/',
       instagram: 'https://www.instagram.com/visit_uruguay/',
@@ -21,15 +39,68 @@ const INTERNATIONAL = [
     id: 'bariloche',
     name: 'San Carlos de Bariloche',
     country: 'Argentina',
-    summary: 'Suíça argentina: lagos, chocolate e montanhas. Inverno com neve, mas frio intenso para asma.',
-    estimatedCost: { min: 9000, max: 16000 },
-    pros: ['Paisagens de montanha únicas', 'Chocolatearias e fondue', 'Experiência internacional'],
-    cons: ['Requer passaporte', 'Frio seco e altitude — risco para asma', 'Orçamento estoura facilmente', 'Câmbio argentino instável'],
-    transport: 'Carro POA → Bariloche (~2.100 km) — viagem longa',
+    summary: 'Suíça argentina: lagos, chocolateiras e montanhas nevadas. Inverno clássico com neve — experiência única, mas exige cuidado com asma.',
+    whyMarjurie: 'Chocolate quentinho, fondue romântico e paisagem de cartão-postal. Centro com arquitetura alpina e cafés aconchegantes — parecido com Campos do Jordão, só que na Argentina.',
+    estimatedCost: { min: 9000, max: 18000 },
+    pros: [
+      'Neve e montanhas em julho/agosto',
+      'Circuito Chico e chocolateiras',
+      'Fondue e gastronomia europeia',
+      'Sem visto para brasileiros (só passaporte)',
+      'Muito romântico no inverno'
+    ],
+    cons: [
+      'Requer passaporte válido',
+      'Frio seco e altitude — risco para asma',
+      'Orçamento estoura facilmente',
+      'Voo POA → Bariloche com conexão em Buenos Aires',
+      'Distância de carro inviável (2.100 km)'
+    ],
+    transport: 'Avião POA → AEP/EZE → Bariloche (BRC) · ~8–12h · ou carro (não recomendado, 2.100 km)',
+    highlights: [
+      'Cerro Catedral (vista, teleférico)',
+      'Circuito Chico de carro',
+      'Mamuschka e chocolateiras do centro',
+      'Lago Nahuel Huapi — passeio de barco'
+    ],
     references: {
       official: 'https://www.bariloche.gov.ar/',
       instagram: 'https://www.instagram.com/turismobariloche/',
       youtube: 'https://www.youtube.com/results?search_query=bariloche+inverno+casal'
+    }
+  },
+  {
+    id: 'panama',
+    name: 'Cidade do Panamá',
+    country: 'Panamá',
+    summary: 'Canal do Panamá, Casco Viejo colonial e clima tropical. Mistura de história, gastronomia e passeios indoor — boa opção para home office no hotel.',
+    whyMarjurie: 'Casco Viejo é charmoso à noite (ruas de pedra, restaurantes e vista para o skyline). Museu do Canal é fascinante e totalmente coberto. Clima quente escapa do frio do Sul.',
+    estimatedCost: { min: 10000, max: 18000 },
+    pros: [
+      'Canal do Panamá — experiência única',
+      'Casco Viejo romântico à noite',
+      'Sem visto para brasileiros (só passaporte)',
+      'Dólar aceito — sem câmbio complicado',
+      'Hotéis com Wi-Fi para Tiago trabalhar'
+    ],
+    cons: [
+      'Requer passaporte válido',
+      'Jul/ago = época de chuvas (umidade alta)',
+      'Passagem POA → PTY ~R$ 3.900+ por pessoa',
+      'Muito acima do orçamento de R$ 6 mil',
+      'Umidade pode incomodar quem tem asma'
+    ],
+    transport: 'Avião POA → GRU/BSB → Cidade do Panamá (PTY) · ~10–14h com conexão · Copa/Avianca',
+    highlights: [
+      'Museu do Canal do Panamá (indoor)',
+      'Casco Viejo — jantar romântico',
+      'Cinta Costera ao pôr do sol',
+      'Dia opcional: Ilhas do Pacífico (Contadora)'
+    ],
+    references: {
+      official: 'https://www.visitpanama.com/',
+      instagram: 'https://www.instagram.com/visit_panama/',
+      youtube: 'https://www.youtube.com/results?search_query=cidade+do+panama+viagem+casal+canal'
     }
   }
 ];
@@ -557,6 +628,106 @@ const DESTINATIONS = [
     weekendActivity: 'Dia inteiro no Hot Park ou Rio Quente (piscinas aquecidas)',
     arrivalNote: 'Voo POA→Goiânia + carro 2h30',
     departureNote: 'Retorno'
+  },
+  {
+    id: 'punta-del-este',
+    name: 'Punta del Este',
+    state: 'Uruguai',
+    international: true,
+    passportRequired: true,
+    topRank: null,
+    summary: 'Balneário sofisticado do Uruguai — praias, gastronomia e pôr do sol. Em julho/agosto é baixa temporada: mais calmo e acessível.',
+    whyMarjurie: 'La Barra e Porto da Barra ao entardecer, jantares à beira-mar e Casapueblo iluminado. Clima de viagem europeia sem precisar ir tão longe.',
+    scores: { romance: 9, winter: 7, asthma: 7, workation: 6, budget: 5, travel: 8, nightlife: 8 },
+    transport: {
+      car: { distance: 850, time: '12h', fuel: 900, toll: 120, total: 1020, note: 'Inclui travessia fronteira Chuí' },
+      bus: { time: '14h', pricePerPerson: 220, total: 880, note: 'POA → Montevideo/Punta — TTL/Tres Cruces' },
+      plane: { time: '3h+', pricePerPerson: 800, total: 1600, note: 'POA→MVD + transfer 2h ou voo charter' }
+    },
+    costs: {
+      economy: { transport: 'car', transportCost: 1020, lodging: 1050, food: 900, activities: 500, total: 3470 },
+      balanced: { transport: 'car', transportCost: 1020, lodging: 1750, food: 1100, activities: 800, total: 4670 },
+      comfort: { transport: 'plane', transportCost: 1800, lodging: 2800, food: 1400, activities: 1200, total: 7200 }
+    },
+    recommendedTransport: 'car',
+    withinBudget: true,
+    hotels: [
+      { name: "Hotel L'Auberge", price: 180, wifi: true, note: 'Punta Ballena — vista mar' },
+      { name: 'Barradas Parque Hotel', price: 150, wifi: true, note: 'Bom custo-benefício' },
+      { name: 'Hotel Castillo del Mar', price: 220, wifi: true, note: 'Romântico, La Barra' }
+    ],
+    packages: ['Tour Casapueblo + Punta Ballena', 'Passeio Porto + Mansa'],
+    alerts: ['Requer passaporte válido', 'Jul/ago: frio e vento na praia — levar casaco', 'Fronteira Chuí: documentos e seguro internacional do carro', 'Wi-Fi do hotel — confirmar para home office'],
+    references: {
+      official: 'https://www.turismo.gub.uy/',
+      instagram: 'https://www.instagram.com/visit_uruguay/',
+      youtube: [
+        { title: 'Punta del Este guia', url: 'https://www.youtube.com/results?search_query=punta+del+este+viagem+casal' },
+        { title: 'Casapueblo Uruguai', url: 'https://www.youtube.com/results?search_query=casapueblo+punta+ballena' }
+      ],
+      maps: 'https://maps.google.com/?q=Punta+del+Este,Uruguai'
+    },
+    eveningActivities: [
+      'Chegada e check-in — jantar em La Barra',
+      'Porto da Barra ao pôr do sol',
+      'Praia Mansa — caminhada curta ao entardecer',
+      'Casapueblo (Punta Ballena) iluminado',
+      'Jantar em Playa Brava',
+      'Centro de Punta — cafés e lojas'
+    ],
+    weekendActivity: 'Manhã em Casapueblo + tarde na Praia Mansa + jantar romântico no porto',
+    arrivalNote: 'Carro POA → Chuí/Santana do Livramento → Punta (~12h) — sair cedo 26/jul',
+    departureNote: 'Check-out e retorno ao RS pela fronteira'
+  },
+  {
+    id: 'bariloche',
+    name: 'Bariloche',
+    state: 'Argentina',
+    international: true,
+    passportRequired: true,
+    topRank: null,
+    summary: 'Suíça argentina na Patagônia — neve, lagos, chocolate e fondue. Referência máxima de inverno romântico na América do Sul.',
+    whyMarjurie: 'Chocolate quentinho, fondue à noite e cenário de montanha com neve. O centro alpino é perfeito para fotos e cafés a dois.',
+    scores: { romance: 10, winter: 10, asthma: 4, workation: 5, budget: 3, travel: 5, nightlife: 7 },
+    transport: {
+      car: { distance: 2100, time: '28h+', fuel: 2200, toll: 300, total: 2500, note: 'Não recomendado para 7 dias' },
+      bus: { time: '36h+', pricePerPerson: 400, total: 1600, note: 'Inviável no período' },
+      plane: { time: '8–12h', pricePerPerson: 1400, total: 2800, note: 'POA→Buenos Aires→BRC (Aerolíneas/JetSMART)' }
+    },
+    costs: {
+      economy: { transport: 'plane', transportCost: 3000, lodging: 1400, food: 900, activities: 800, total: 6100 },
+      balanced: { transport: 'plane', transportCost: 3200, lodging: 2100, food: 1100, activities: 1100, total: 7500 },
+      comfort: { transport: 'plane', transportCost: 3600, lodging: 3500, food: 1400, activities: 1500, total: 10000 }
+    },
+    recommendedTransport: 'plane',
+    withinBudget: false,
+    hotels: [
+      { name: 'Hotel NH Edelweiss', price: 220, wifi: true, note: 'Centro, vista lago' },
+      { name: 'Mansion Express', price: 160, wifi: true, note: 'Econômico no centro' },
+      { name: 'Los Cauquenes Resort', price: 350, wifi: true, note: 'Romântico premium' }
+    ],
+    packages: ['Circuito Chico', 'Cerro Catedral ski pass / teleférico', 'Passeio de barco Nahuel Huapi'],
+    alerts: ['Requer passaporte válido', 'Frio seco intenso — cuidado com asma', 'Altitude ~800m', 'Câmbio argentino — levar dólares ou cartão', 'Acima do orçamento na maioria dos cenários'],
+    references: {
+      official: 'https://www.bariloche.gov.ar/',
+      instagram: 'https://www.instagram.com/turismobariloche/',
+      youtube: [
+        { title: 'Bariloche inverno casal', url: 'https://www.youtube.com/results?search_query=bariloche+inverno+casal' },
+        { title: 'Circuito Chico', url: 'https://www.youtube.com/results?search_query=circuito+chico+bariloche' }
+      ],
+      maps: 'https://maps.google.com/?q=San+Carlos+de+Bariloche,Argentina'
+    },
+    eveningActivities: [
+      'Chegada e fondue de boas-vindas no centro',
+      'Mamuschka — chocolate e sobremesa',
+      'Centro civico iluminado',
+      'Fondue restaurante suíço',
+      'Cervejaria Patagonia',
+      'Passeio noturno na Av. Bustillo'
+    ],
+    weekendActivity: 'Circuito Chico de carro (manhã) + Cerro Campanario (vista) + fondue à noite',
+    arrivalNote: 'Voo POA → Buenos Aires → Bariloche — chegada 26/jul à tarde',
+    departureNote: 'Voo de retorno BRC → POA (via BUE) — 2/ago'
   }
 ];
 
@@ -611,7 +782,7 @@ function filterDestinations() {
     if (activeFilters.romance > 0 && dest.scores.romance < activeFilters.romance) return false;
     if (activeFilters.asthma > 0 && dest.scores.asthma < activeFilters.asthma) return false;
     return true;
-  });
+  }).sort((a, b) => (a.international ? 1 : 0) - (b.international ? 1 : 0));
 }
 
 function renderTop3() {
@@ -664,21 +835,33 @@ function renderCard(dest) {
   const cost = getRecommendedCost(dest);
   const isFav = favorites.includes(dest.id);
   const isCompare = compareSelection.includes(dest.id);
-  const budgetBadge = dest.withinBudget && cost.total <= BUDGET_MAX
-    ? '<span class="badge badge-budget-ok">Dentro do orçamento</span>'
-    : cost.total <= BUDGET_MAX
-      ? '<span class="badge badge-budget-warn">Apertado</span>'
+  let budgetBadge;
+  if (dest.international) {
+    budgetBadge = dest.withinBudget && cost.total <= BUDGET_MAX
+      ? '<span class="badge badge-budget-ok">Pode caber no orçamento</span>'
       : '<span class="badge badge-budget-over">Acima de R$ 6 mil</span>';
+  } else {
+    budgetBadge = dest.withinBudget && cost.total <= BUDGET_MAX
+      ? '<span class="badge badge-budget-ok">Dentro do orçamento</span>'
+      : cost.total <= BUDGET_MAX
+        ? '<span class="badge badge-budget-warn">Apertado</span>'
+        : '<span class="badge badge-budget-over">Acima de R$ 6 mil</span>';
+  }
+
+  const intlBadges = dest.international
+    ? '<span class="badge badge-intl">Internacional</span><span class="badge badge-passport">Passaporte</span>'
+    : '';
 
   return `
-    <article class="dest-card ${isCompare ? 'selected-compare' : ''}" data-id="${dest.id}">
+    <article class="dest-card ${isCompare ? 'selected-compare' : ''} ${dest.international ? 'dest-card-intl' : ''}" data-id="${dest.id}">
       <div class="dest-card-header">
         <h3>${dest.name}</h3>
-        <span class="state">${dest.state} · Nota ${dest.overallScore}/10</span>
+        <span class="state">${dest.state}${dest.international ? ' 🌎' : ''} · Nota ${dest.overallScore}/10</span>
       </div>
       <div class="dest-card-body">
         <p class="dest-summary">${dest.summary}</p>
         <div class="badges">
+          ${intlBadges}
           <span class="badge badge-workation">Home office</span>
           <span class="badge badge-indoor">Indoor+</span>
           ${budgetBadge}
@@ -747,7 +930,7 @@ function openModal(destId) {
     <table class="data-table">
       <thead><tr><th>Modalidade</th><th>Tempo</th><th>Custo (casal)</th><th>Obs.</th></tr></thead>
       <tbody>
-        <tr><td>🚗 Carro</td><td>${dest.transport.car.time} ida</td><td>${formatMoney(dest.transport.car.total)}</td><td>${dest.transport.car.distance} km · combustível ${formatMoney(dest.transport.car.fuel)} + pedágio ${formatMoney(dest.transport.car.toll)}</td></tr>
+        <tr><td>🚗 Carro</td><td>${dest.transport.car.time} ida</td><td>${formatMoney(dest.transport.car.total)}</td><td>${dest.transport.car.distance} km · combustível ${formatMoney(dest.transport.car.fuel)} + pedágio ${formatMoney(dest.transport.car.toll)}${dest.transport.car.note ? ' · ' + dest.transport.car.note : ''}</td></tr>
         <tr><td>🚌 Ônibus</td><td>${dest.transport.bus.time}</td><td>${formatMoney(dest.transport.bus.total)}</td><td>${dest.transport.bus.note || ''}</td></tr>
         <tr><td>✈️ Avião</td><td>${dest.transport.plane.time}</td><td>${formatMoney(dest.transport.plane.total)}</td><td>${dest.transport.plane.note || ''}</td></tr>
       </tbody>
@@ -784,6 +967,7 @@ function openModal(destId) {
   ).join('');
 
   els.modalBody.innerHTML = `
+    ${dest.passportRequired ? '<div class="alert-banner danger" style="margin-bottom:1rem"><strong>Requer passaporte válido</strong> — documentação internacional necessária para esta viagem.</div>' : ''}
     <p style="margin-bottom:1rem;color:var(--color-text-muted)"><em>${dest.whyMarjurie}</em></p>
     <div class="modal-section">
       <h3>Roteiro dia a dia (26/jul – 2/ago)</h3>
@@ -896,8 +1080,10 @@ function renderInternational() {
       <span class="passport-warn">Requer passaporte válido</span>
       <h3>${intl.name} — ${intl.country}</h3>
       <p>${intl.summary}</p>
-      <p><strong>Custo estimado (casal):</strong> ${formatMoney(intl.estimatedCost.min)} – ${formatMoney(intl.estimatedCost.max)}</p>
+      ${intl.whyMarjurie ? `<p style="margin-top:0.5rem;font-style:italic;color:var(--color-text-muted)"><strong>Para Marjurie:</strong> ${intl.whyMarjurie}</p>` : ''}
+      <p><strong>Custo estimado (casal, 7 noites):</strong> ${formatMoney(intl.estimatedCost.min)} – ${formatMoney(intl.estimatedCost.max)}</p>
       <p><strong>Transporte:</strong> ${intl.transport}</p>
+      ${intl.highlights ? `<p><strong>Destaques:</strong> ${intl.highlights.join(' · ')}</p>` : ''}
       <p style="margin-top:0.5rem"><strong>Prós:</strong> ${intl.pros.join(' · ')}</p>
       <p><strong>Contras:</strong> ${intl.cons.join(' · ')}</p>
       <div class="links-grid" style="margin-top:0.75rem">
